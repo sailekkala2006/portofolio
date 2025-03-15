@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=fv, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+   
+    
+    #header{
+        height:60px;
+        width: auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        box-shadow: 0 4px 8px rgb(0,0,0,0.5);
+        
+    }
+    #menuicon{
+        display: none;
+       
+    }
+    a{
+        text-decoration: none;
+        color:black;
+        text-transform:uppercase ;  
+        text-align: center;
+        margin:15px;
+        padding: 5px 25px;
+        border-radius: 15px;
+       
+    }
+    
+    
+    a:hover{
+        background-color:black;
+        color: white;
+        width:auto;
+        height:auto;
+    }
+    #section1{
+     
+      height:450px;
+      margin-top: 40px;
+      
+     
+
+    }
+    
+    
+    
+    b{
+      text-transform: capitalize;
+      
+    }
+    #subsection1{
+    text-transform: capitalize;
+    padding:150px 0px 0px 80px;
+    font-size:26px;
+    
+    
+    }
+     #subsection2{
+    text-transform: none;
+    padding:10px 0px 0px 80px;
+    font-size:26px;
+    
+    }
+     #subsection3{
+    text-transform: capitalize;
+    padding-left:80px;
+    padding-top:15px;
+    font-size:19px;
+    font-family: 'Courier New', monospace;
+    }
+    #photosection{
+        background-color: white;
+        height:180px;
+        width: 180px;
+        margin-top:-150px;
+        margin-right: 60px;
+        border-radius:120px;
+        display: flex;
+        justify-content: center;
+       }
+       #section1-2{
+        display:flex;
+        justify-content: flex-end;
+       
+       }
+       #img{
+        height: 170px;
+        width:170px;
+        border-radius:100px;
+        margin-top: 5px;
+
+       }
+       #photosection:hover{
+        background-color: blue;
+        transition-duration: 1s;
+       }
+       #contactlinks{
+        display: flex;
+        margin-left:10px;
+       }
+       #link{
+        width: 80px;
+        height: 80px;
+        margin-left: 80px;
+        margin-top: -5px;
+       }
+       #git{
+        margin-left:20px;
+        height: 60px;
+        width: 60px;
+        border-radius: 20px;
+        
+       }
+       #section2{
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        margin-top: 20px;
+      
+        
+        
+        
+       }
+       #section2-1{
+        margin-top:50px;
+        margin-left: 10px;
+       }
+       #section2-2{
+        background-color:white;
+        border: rgb(85, 85, 85) 0.1rem solid;
+        height:fit-content;
+        width:fit-content;
+        margin-left: 10px;
+        border-radius: 2rem;
+        margin:auto;
+        margin-top:50px;
+        box-shadow: 0 4px 8px rgb(0,0,0,0.5);
+        text-align: center;
+       }
+       #section2-3{
+        background-color:white;
+        font-family:  monospace;
+        height:fit-content;
+        width: fit-content;
+        margin:auto ;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top:50px ;
+        font-size: 20px;
+        text-indent: 50px;
+  text-align: justify;
+  letter-spacing: px;
+  color: rgb(85, 85, 85);
+  box-shadow: 0 4px 8px rgb(0,0,0,0.5);
+  padding: 20px;
+  border-radius: 15px;
+        
+       }
+       
+
+       #about{
+        margin-top: 20px;
+        display: flex;
+       }
+       #aboutheading{
+  text-align: center;
+  width:97%;
+  text-transform: capitalize;
+        font-size: 2em;
+        
+        
+}
+       h3{
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        margin-top: 15px;
+        text-transform: capitalize;
+        font-weight: bold;
+       }
+       p {
+    display: flex;
+    justify-content: center;
+    color: rgb(85, 85, 85);
+}
+#right{
+  margin: auto;
+}
+#section3-1{
+  display: flex;
+  margin-top:40px;
+}
+#skillheading{
+ 
+  font-size: 40px;
+  width: 97%;
+  text-align: center;
+}
+#section3{
+  height:650px;
+  text-transform: capitalize;
+  
+  
+}
+
+
+#skills{
+ border: 2px solid rgb(85, 85, 85);
+  width:50%;
+  height:fit-content;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-family:  monospace;
+  font-size: 25px;
+  padding-top: 10px;
+  box-shadow: 0 4px 8px rgb(0,0,0,0.5);
+}
+#languages ul {
+            /* Prevents full-width stretching */
+            text-align:left; /* Aligns text properly */
+            padding-left: 20px; 
+            display:inline-block;
+            color: rgb(85, 85, 85)/* Adds some spacing from the left */
+        }
+
+        #languages li {
+            font-size: 20px;
+            padding: 5px;
+             /* Ensures bullet points (dots) appear */
+        }
+
+#tech{
+ border-radius: 2rem;
+  width: 50%;
+  margin: auto;
+  height:fit-content;
+  margin-top: 40px;
+  border: 2px solid rgb(85, 85, 85);
+  text-align: center;
+  font-family:  monospace;
+  font-size: 25px;
+  padding-top: 10px;
+  box-shadow: 0 4px 8px rgb(0,0,0,0.5);
+}
+#section4{
+  height: 550px;
+margin-top: 90px;
+  
+}
+#section4-1{
+  display: flex;
+  padding-top: 20px;
+  
+
+}
+#projectheading{
+  text-align: center;
+  width:97%;
+  text-transform: capitalize;
+  font-size: 2em;
+        
+}
+#up{
+rotate:180deg;
+}
+#section4-2,#section4-3{
+display: flex;
+width: 80%;
+margin: auto;
+
+}
+#subsection4-1{
+  
+  width:50%;
+  height: 300px;
+  margin-top: 60px;
+  border: 2px solid rgb(85, 85, 85);
+  border-radius: 20px;
+  margin-right: 30px;
+}
+#subsection4-2{
+  
+  width:50%;
+  height: 300px;
+  margin-top: 60px;
+  margin-left: 30px;
+  border: 2px solid rgb(85, 85, 85);
+  border-radius: 20px;
+}
+#text1{
+  width: 50%;
+  text-align: center;
+  margin-right: 30px;
+  margin-top: 20px;
+  font-family: monospace;
+  font-size: 20px;
+}
+#text2
+{
+  width: 50%;
+  text-align: center;
+  margin-left: 30px;
+  margin-top: 20px;
+  font-family: monospace;
+  font-size: 20px;
+}
+#section5{
+ 
+  height: 300px;
+}
+#section5-1{
+  display: flex;
+  padding-top: 20px;
+  
+
+}
+#contactheading{
+  text-align: center;
+  width:97%;
+  text-transform: capitalize;
+  font-size: 2em;
+        
+}
+#email2{
+  width: 70px;
+  height: 70px;
+  margin: auto;
+}
+#email{
+  display: flex;
+  margin-top: 60px;
+}
+#mail{
+  margin: auto;
+  margin-left:-400px;
+}
+       @media only screen and (max-width:6500px) and (min-width:1850px){
+        #bodycontent{
+        width: 50%;
+        margin: auto;
+
+       }
+       #section2{
+        width: 100%;
+        margin: auto;
+       }
+       #headernavbar{
+        width: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 20px;
+       }
+       #subsection{
+        width: 70%;
+        margin: auto;
+       }
+
+
+        }
+      @media only screen and (max-width:780px) and (min-width:701px){
+       #subsection1{
+      margin-left:-40px ; 
+      }
+      #subsection2{
+      margin-left:-40px ; 
+      }
+      #subsection3{
+      margin-left:-40px ; 
+      font-size: 14px;
+      }
+      #photosection{
+        height: 160px;
+        width:160px;
+        margin-right: 20px;
+      }
+      #img{
+        height:150px;
+        width:150px;
+        margin-top: 5px;
+      }
+      #body{
+        margin: auto 0px;
+      }
+      }
+    @media only screen and (max-width:600px) and (min-width:70px){
+        #header{
+            
+            display:none;
+           align-items: left;
+           justify-content: flex-end;
+           flex-direction: column;
+          height: auto;
+         
+        }
+        a{
+            display: flex;
+            justify-content: center;
+             text-align: center;
+             font-size:20px;
+        }
+        #section1{
+        height:400px;
+
+        }
+        #menuicon{
+            display: block;
+            display: flex;
+            justify-content: flex-end;
+            
+        }
+        #subsection2{
+        font-size:12px;
+        display:flex;
+        justify-content:center;
+        padding-right:80px;
+        font-style:italic;
+        padding-top:5px;
+     
+        }
+        #subsection1{
+        font-size:12px;
+        display:flex;
+        justify-content:center;
+        padding-right:80px;
+        padding-top:180px;
+        }
+        #subsection3{
+        font-size:11px;
+        display:flex;
+        justify-content:center;
+        padding-right:80px;
+        
+        padding-top:5px;
+        }
+        #photosection{
+        
+        height:130px;
+        width:130px;
+        border-radius: 70px;
+        background-color:white;
+        margin-top:-230px;
+        
+
+        
+        }
+        #section1-2{
+          display: flex;
+          justify-content:center;
+          padding-left: 80px;
+        }
+        #img{
+          height: 120px;
+          width: 120px;
+          border-radius: 60px;
+          margin-top: 5px;
+        }
+        #photosection:hover{
+          background-color:blue;
+          transition-duration:1s;
+        }
+        #section2{
+          display: inline;
+          margin-top: 0px;
+        }
+        #section2-1{
+          display: none;
+        }
+        #section2-2{
+          width: auto;
+          margin-top:15px;
+          
+        }
+        #section2-3{
+          width: auto;
+          height:fit-content;
+          margin: auto;
+          margin-top:30px;
+        }
+        #skills,#tech{
+          height: fit-content;
+        }
+       
+        #degree{
+          text-align: center;
+        }
+        #contactlinks{
+          display: flex;
+          justify-content: center;
+          margin-right: 80px;
+          margin-top: 40px;
+        }
+        #about{
+          margin-top: 20px;
+        }
+        #mail{
+          margin-top: 80px;
+          
+        }
+        }
+       
+        
+       
+  </style>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="body">
+    <div id="menuicon">
+        <div id="sa" class="fa fa-bars" style="font-size:48px;color:black" onclick="sam()"></div>
+    </div>
+    <div id ="header">
+      <div id="headernavbar">
+        
+        <a href="#">home</a>
+        <a href="#" onclick="fun()">aboutme</a>
+        <a href="#" onclick="fun2()">skills</a>
+        <a href="#" onclick="fun3()">projects</a>
+      </div>
+    </div>  
+    <div id="bodycontent">
+      <div id="section1">
+        <div id="subsection">
+              <div id="subsection1">hello i'am</div>
+                <div id="subsection2"><b>lekkala sai prasad reddy</b></div>
+                <div id="subsection3">Currently pursuing 3rd year Diploma in Computer Engineering</div>
+                <div id="section1-2">
+                <div id="photosection">
+                  <img src="https://yt3.googleusercontent.com/Cn4GV7y1f7LeohG1Szr6Ah08HePK-SKuyjhtf0jao6OBOUr-LtIrb_k8Nkac2HbEXzPhWz_V=s160-c-k-c0x00ffffff-no-rj" id="img"></img>
+                </div>
+              </div> 
+              <div id="contactlinks">
+                <div id="linkedin">
+                  <img src="https://www.logo.wine/a/logo/LinkedIn/LinkedIn-Icon-Black-Logo.wine.svg" id="link"onclick="window.location.href='https://www.linkedin.com/in/lekkala-sai-prasad-reddy-36b23b2b2/'" >
+                </div>
+                <div id="github">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKfpcT9pukR3OGAg5MzGXR0aopy7CRbEGjQYeprsv57ecKJlo4eRiZYuou9e_RAtuseHE&usqp=CAU" id="git" >
+                </div>
+              </div>
+        </div>
+      </div>
+      <div id="about">
+        <div id="aboutheading">about</div>
+        <div id="up"><img src="http://personalweb123.s3-website.ap-south-1.amazonaws.com/assets/arrow.png" alt="arrow" width="40px" height="40px" onclick="fun4()"></div>
+        </div>
+      </div>
+      <div  id="section2">
+        <div id="section2-1"><img src="https://img.freepik.com/premium-vector/creative-vector-design-man-sits-computer-with-computer-monitor-top_801373-36.jpg?ga=GA1.1.1023817871.1720066149&semt=ais_hybrid" alt="im" height="400px" width="430px" id="img2"></div>
+          <div id="right">
+            <div id="section2-2"><h3>education</h3>
+            <p id="degree">DIPLOMA IN CME(COMPUTER ENGINEERING)</p>
+            <p>2022 - 2025</p>
+            </div>
+            <div id="section2-3"><div><P id="cool">I completed my diploma in Computer Engineering at Global College of Engineering and Technology with a percentage of 86%. I'm passionate about web development, data analytics, and AI/ML. My skills include HTML, CSS, JavaScript, C, Java, Python, SQL, and data structures and algorithms. I've completed two impactful projects using HTML, CSS, and JavaScript.</P></div></div>
+          </div>
+      </div>
+    </div>
+    <div id="section3">
+      <div id="section3-1">
+        <div id="skillheading">skills</div>
+        <div id="up"><img src="http://personalweb123.s3-website.ap-south-1.amazonaws.com/assets/arrow.png" alt="arrow" width="40px" height="40px" onclick="fun4()"></div>
+      </div>
+      <div id="subsection3-2">
+       <div id="skills">programming languages
+        <div id="languages">
+          <ul>
+         <li>python</li>
+          <li>java</li>
+          <li>sql</li>
+         <li>c language</li>
+         <li>c++</li>
+         <li>javascript</li>
+         </ul>
+        </div>
+       </div>
+       <div id="tech">technologies
+       <div id="languages">
+        <ul>
+          <li>html</li>
+          <li>css</li>
+          <li>ms word</li>
+          <li>ms excel</li>
+          <li>ms power point</li>
+        </ul>
+       </div>
+       </div>
+      </div>
+    </div>
+     <div id="section4">
+        <div id="section4-1">
+         <div id="projectheading">projects</div>
+         <div id="up"><img src="http://personalweb123.s3-website.ap-south-1.amazonaws.com/assets/arrow.png" alt="arrow" width="40px" height="40px" onclick="fun4()"></div>
+        </div>
+        <div id="section4-2">
+          <div id="subsection4-1">college</div>
+          <div id="subsection4-2">youtube</div>
+        </div>
+        <div id="section4-3">
+          <div id="text1">college website</div>
+          <div id="text2">youtube channel website</div>
+        </div>
+        
+      </div>
+      <div id="section5">
+        <div id="section5-1">
+          <div id="contactheading">contact me</div>
+          <div id="up"><img src="http://personalweb123.s3-website.ap-south-1.amazonaws.com/assets/arrow.png" alt="arrow" width="40px" height="40px" onclick="fun4()"></div>
+         </div>
+         <div id="email"><img src="data:image/png;base64,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" alt="email" id="email2"><div id="mail">lekkalasaiprasadreddy@gmail.com</div></div>
+      </div>
+     
+  </div>
+    <script>
+   function sam() {
+            const sai = document.querySelector('#header');
+            sai.style.display = sai.style.display === 'flex' ? 'none' : 'flex';
+        }
+    function fun(){
+      document.getElementById("about").scrollIntoView({ behavior:"smooth" });
+    }
+    function fun2(){
+      document.getElementById("section3-1").scrollIntoView({ behavior:"smooth" });
+    }
+    function fun3(){
+      document.getElementById("section4").scrollIntoView({ behavior:"smooth" });
+    }
+    function fun4(){
+      document.getElementById("header").scrollIntoView( {behavior:"smooth"} );
+    }
+       
+</script>  
+</body>
+</html>
